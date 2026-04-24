@@ -8,8 +8,6 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
-        
-        /* Header Styles */
         header { background: linear-gradient(135deg, #1a5276, #2e86c1); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         .header-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 1.5rem; font-weight: bold; }
@@ -17,63 +15,41 @@
         .contact-info { text-align: right; }
         .phone { font-size: 1.3rem; font-weight: bold; color: #f1c40f; text-decoration: none; }
         .phone:hover { color: #fff; }
-        
-        /* Navigation */
         nav { background: #2c3e50; }
         nav ul { max-width: 1200px; margin: 0 auto; padding: 0 2rem; list-style: none; display: flex; flex-wrap: wrap; }
         nav li a { color: white; padding: 1rem 1.2rem; display: block; text-decoration: none; transition: background 0.3s; }
         nav li a:hover { background: #34495e; }
-        
-        /* Hero Section */
         .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200') center/cover; color: white; padding: 5rem 2rem; text-align: center; }
         .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
         .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; }
         .cta-button { background: #f1c40f; color: #2c3e50; padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; transition: transform 0.3s; }
         .cta-button:hover { transform: scale(1.05); background: #f39c12; }
-        
-        /* Services Section */
         .section { padding: 4rem 2rem; }
         .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #1a5276; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
         .service-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s; }
         .service-card:hover { transform: translateY(-5px); }
         .service-icon { font-size: 3rem; margin-bottom: 1rem; }
-        
-        /* Districts Section */
         .districts { background: #f8f9fa; }
         .districts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 1200px; margin: 0 auto; }
         .district-item { background: white; padding: 0.8rem; text-align: center; border-radius: 5px; font-weight: 500; }
-        
-        /* Process Section */
         .process-steps { max-width: 800px; margin: 0 auto; }
         .step { display: flex; margin-bottom: 1.5rem; }
         .step-number { background: #1a5276; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem; flex-shrink: 0; }
-        
-        /* Gallery Section */
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 1200px; margin: 0 auto; }
         .gallery-item { height: 200px; background: linear-gradient(45deg, #3498db, #2e86c1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
-        
-        /* Reviews Section */
         .reviews { background: #f8f9fa; }
         .review-card { background: white; padding: 1.5rem; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
         .review-header { display: flex; align-items: center; margin-bottom: 0.5rem; }
         .review-avatar { width: 50px; height: 50px; background: #3498db; border-radius: 50%; margin-right: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
         .stars { color: #f1c40f; }
-        
-        /* Map Section */
         .map-container { max-width: 1200px; margin: 0 auto; }
         .map-frame { width: 100%; height: 400px; border: 0; border-radius: 10px; }
-        
-        /* Contact Section */
         .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
         .contact-info-box { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .contact-item { display: flex; align-items: center; margin-bottom: 1rem; }
         .contact-icon { font-size: 1.5rem; margin-right: 1rem; color: #1a5276; }
-        
-        /* Footer */
         footer { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
-        
-        /* Responsive */
         @media (max-width: 768px) {
             .header-container { flex-direction: column; text-align: center; }
             .contact-info { text-align: center; margin-top: 1rem; }
@@ -83,18 +59,18 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <div data-sb-object-id="index.html">
+
     <header>
         <div class="header-container">
-            <div class="logo">ÖZEN <span>KARDEŞLER</span> NAKLİYAT</div>
+            <div class="logo" data-sb-field-path="company_name">ÖZEN <span>KARDEŞLER</span> NAKLİYAT</div>
             <div class="contact-info">
-                <a href="tel:+905442087149" class="phone">📞 +90 544 208 71 49</a>
-                <p>7/24 Hizmetinizdeyiz</p>
+                <a href="tel:+905442087149" class="phone" data-sb-field-path="phone_link">📞 +90 544 208 71 49</a>
+                <p data-sb-field-path="working_hours_text">7/24 Hizmetinizdeyiz</p>
             </div>
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#anasayfa">Ana Sayfa</a></li>
@@ -107,190 +83,51 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="anasayfa">
-        <h1>İzmir'de Güvenilir Evden Eve Nakliyat</h1>
-        <p>Özen Kardeşler Nakliyat olarak 20 yıllık tecrübemizle eşyalarınızı özenle, sigortalı ve profesyonel ekipmanlarla yeni adresinize taşıyoruz.</p>
-        <a href="tel:+905442087149" class="cta-button">📞 Hemen Teklif Alın</a>
+        <h1 data-sb-field-path="hero_title">İzmir'de Güvenilir Evden Eve Nakliyat</h1>
+        <p data-sb-field-path="hero_description">Özen Kardeşler Nakliyat olarak 20 yıllık tecrübemizle eşyalarınızı özenle, sigortalı ve profesyonel ekipmanlarla yeni adresinize taşıyoruz.</p>
+        <a href="tel:+905442087149" class="cta-button" data-sb-field-path="hero_cta">📞 Hemen Teklif Alın</a>
     </section>
 
-    <!-- Services Section -->
     <section class="section" id="hizmetler">
-        <h2 class="section-title">Hizmetlerimiz</h2>
+        <h2 class="section-title" data-sb-field-path="services_title">Hizmetlerimiz</h2>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">🏠</div>
-                <h3>Evden Eve Nakliyat</h3>
-                <p>Eşyalarınızı özenle paketleyip, yeni evinize güvenle teslim ediyoruz.</p>
+                <h3 data-sb-field-path="s1_title">Evden Eve Nakliyat</h3>
+                <p data-sb-field-path="s1_desc">Eşyalarınızı özenle paketleyip, yeni evinize güvenle teslim ediyoruz.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🏗️</div>
-                <h3>Asansörlü Nakliyat</h3>
-                <p>Yüksek katlı binalar için özel asansör sistemiyle hızlı ve güvenli taşıma.</p>
+                <h3 data-sb-field-path="s2_title">Asansörlü Nakliyat</h3>
+                <p data-sb-field-path="s2_desc">Yüksek katlı binalar için özel asansör sistemiyle hızlı ve güvenli taşıma.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🏢</div>
-                <h3>Ofis & Büro Taşıma</h3>
-                <p>İş yerinizi minimum downtime ile profesyonelce taşıyoruz.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🚚</div>
-                <h3>Şehirler Arası Nakliyat</h3>
-                <p>Türkiye'nin her yerine sigortalı, kapalı kasa araçlarla taşıma.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📦</div>
-                <h3>Parça Eşya Taşıma</h3>
-                <p>Tek parça eşyalarınız için ekonomik ve güvenli çözüm.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🔒</div>
-                <h3>Sigortalı Taşımacılık</h3>
-                <p>Tüm eşyalarınız taşıma süresince tam sigorta kapsamındadır.</p>
+                <h3 data-sb-field-path="s3_title">Ofis & Büro Taşıma</h3>
+                <p data-sb-field-path="s3_desc">İş yerinizi minimum downtime ile profesyonelce taşıyoruz.</p>
             </div>
         </div>
     </section>
 
-    <!-- Districts Section -->
-    <section class="section districts" id="bolgeler">
-        <h2 class="section-title">İzmir Hizmet Bölgelerimiz</h2>
-        <div class="districts-grid">
-            <div class="district-item">Bayraklı</div>
-            <div class="district-item">Bornova</div>
-            <div class="district-item">Karşıyaka</div>
-            <div class="district-item">Konak</div>
-            <div class="district-item">Buca</div>
-            <div class="district-item">Çiğli</div>
-            <div class="district-item">Gaziemir</div>
-            <div class="district-item">Balçova</div>
-            <div class="district-item">Narlıdere</div>
-            <div class="district-item">Karabağlar</div>
-            <div class="district-item">Menemen</div>
-            <div class="district-item">Çeşme</div>
-            <div class="district-item">Urla</div>
-            <div class="district-item">Seferihisar</div>
-            <div class="district-item">Tire</div>
-            <div class="district-item">Ödemiş</div>
-            <div class="district-item">Bergama</div>
-            <div class="district-item">Foça</div>
-            <div class="district-item">Aliağa</div>
-            <div class="district-item">Tüm İzmir</div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
     <section class="section" id="surec">
         <h2 class="section-title">Taşınma Sürecimiz</h2>
         <div class="process-steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <div><strong>Ücretsiz Keşif:</strong> Eşyalarınızı yerinde görüp detaylı fiyat teklifi veriyoruz.</div>
+                <div data-sb-field-path="step1"><strong>Ücretsiz Keşif:</strong> Eşyalarınızı yerinde görüp detaylı fiyat teklifi veriyoruz.</div>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
-                <div><strong>Profesyonel Paketleme:</strong> Eşyalarınızı özenle paketliyor, kırılacakları özel koruma ile sarıyoruz.</div>
+                <div data-sb-field-path="step2"><strong>Profesyonel Paketleme:</strong> Eşyalarınızı özenle paketliyor, kırılacakları özel koruma ile sarıyoruz.</div>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
-                <div><strong>Güvenli Taşıma:</strong> Deneyimli ekibimiz ve kapalı kasa araçlarımızla eşyalarınızı taşıyoruz.</div>
-            </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <div><strong>Montaj & Yerleştirme:</strong> Yeni adresinizde mobilyalarınızı monte edip eşyalarınızı yerleştiriyoruz.</div>
-            </div>
-            <div class="step">
-                <div class="step-number">5</div>
-                <div><strong>Müşteri Memnuniyeti:</strong> Taşıma sonrası sizi arayarak memnuniyetinizi öğreniyoruz.</div>
+                <div data-sb-field-path="step3"><strong>Güvenli Taşıma:</strong> Deneyimli ekibimiz ve kapalı kasa araçlarımızla eşyalarınızı taşıyoruz.</div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="section" id="galeri">
-        <h2 class="section-title">Çalışmalarımızdan Kareler</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">📦 Paketleme Çalışması</div>
-            <div class="gallery-item">🚚 Araç Filomuz</div>
-            <div class="gallery-item">🏗️ Asansörlü Taşıma</div>
-            <div class="gallery-item">🏠 Ev Montajı</div>
-            <div class="gallery-item">🏢 Ofis Taşıma</div>
-            <div class="gallery-item">✨ Mutlu Müşteriler</div>
-        </div>
-        <p style="text-align: center; margin-top: 2rem; color: #666;">
-            📸 Gerçek çalışma fotoğraflarımız için Instagram hesabımızı ziyaret edin: 
-            <a href="https://instagram.com/ozenkardeslernakliyat" target="_blank">@ozenkardeslernakliyat</a>
-        </p>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="section reviews" id="yorumlar">
-        <h2 class="section-title">Müşteri Yorumları</h2>
-        <div style="max-width: 800px; margin: 0 auto;">
-            <!-- Google Maps Reviews Embed Placeholder -->
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <p style="margin-bottom: 1rem;">🌟 Google Haritalar'da bizi değerlendirin!</p>
-                <a href="https://maps.google.com/?q=Özen+Kardeşler+Nakliyat+Yamanlar+Mahallesi+7354+sokak+No+67+Bayraklı+İzmir" target="_blank" class="cta-button" style="background: #4285f4; color: white;">
-                    🗺️ Google'da Yorum Yaz
-                </a>
-            </div>
-            
-            <!-- Sample Reviews (Placeholder - Replace with real reviews later) -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="review-avatar">A</div>
-                    <div>
-                        <strong>Ahmet Y.</strong>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </div>
-                <p>"Eşyalarım hiç hasar görmeden, zamanında teslim edildi. Ekip çok profesyoneldi, teşekkürler Özen Kardeşler!"</p>
-            </div>
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="review-avatar">M</div>
-                    <div>
-                        <strong>Mehmet K.</strong>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </div>
-                <p>"Bayraklı'dan Bornova'ya taşındık. Asansörlü sistem sayesinde çok hızlı ve sorunsuz oldu. Kesinlikle tavsiye ederim."</p>
-            </div>
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="review-avatar">Z</div>
-                    <div>
-                        <strong>Zeynep T.</strong>
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                    </div>
-                </div>
-                <p>"Fiyatları uygun, hizmetleri kaliteli. Ofis taşıma işimizde çok yardımcı oldular. Teşekkürler!"</p>
-            </div>
-            
-            <p style="text-align: center; margin-top: 1.5rem; color: #666; font-style: italic;">
-                * Yorumlar temsili olup, gerçek müşteri geri bildirimleri ile güncellenecektir.
-            </p>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="section">
-        <h2 class="section-title">Bize Ulaşın</h2>
-        <div class="map-container">
-            <!-- Google Maps Embed for Özen Kardeşler Nakliyat Location -->
-            <iframe 
-                class="map-frame"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.5!2d27.185!3d38.475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDI4JzMwLjAiTiAyN8KwMTEnMDYuMCJF!5e0!3m2!1str!2str!4v1234567890" 
-                allowfullscreen="" 
-                loading="lazy"
-                title="Özen Kardeşler Nakliyat Konum">
-            </iframe>
-            <p style="text-align: center; margin-top: 1rem; color: #666;">
-                📍 Yamanlar Mahallesi, 7354 Sokak, No: 67, Bayraklı/İzmir
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section class="section" id="iletisim" style="background: #f8f9fa;">
         <h2 class="section-title">İletişim Bilgileri</h2>
         <div class="contact-grid">
@@ -298,43 +135,29 @@
                 <h3>📞 Hemen Arayın</h3>
                 <div class="contact-item">
                     <span class="contact-icon">📱</span>
-                    <a href="tel:+905442087149" style="color: #1a5276; text-decoration: none; font-weight: bold;">+90 544 208 71 49</a>
+                    <a href="tel:+905442087149" style="color: #1a5276; text-decoration: none; font-weight: bold;" data-sb-field-path="contact_phone">+90 544 208 71 49</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-icon">💬</span>
-                    <a href="https://wa.me/905442087149" target="_blank" style="color: #25D366; text-decoration: none; font-weight: bold;">WhatsApp'tan Yazın</a>
+                    <a href="https://wa.me/905442087149" target="_blank" style="color: #25D366; text-decoration: none; font-weight: bold;" data-sb-field-path="whatsapp_text">WhatsApp'tan Yazın</a>
                 </div>
             </div>
             <div class="contact-info-box">
                 <h3>📍 Adresimiz</h3>
                 <div class="contact-item">
                     <span class="contact-icon">🏢</span>
-                    <span>Yamanlar Mahallesi, 7354 Sokak<br>No: 67, Bayraklı/İzmir</span>
-                </div>
-            </div>
-            <div class="contact-info-box">
-                <h3>⏰ Çalışma Saatleri</h3>
-                <div class="contact-item">
-                    <span class="contact-icon">🕐</span>
-                    <span>Pazartesi - Pazar: 08:00 - 20:00<br>7/24 Acil Taşıma Hizmeti</span>
+                    <span data-sb-field-path="address_text">Yamanlar Mahallesi, 7354 Sokak<br>No: 67, Bayraklı/İzmir</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p><strong>ÖZEN KARDEŞLER NAKLİYAT</strong></p>
-        <p>📍 Yamanlar Mah. 7354 Sk. No:67 Bayraklı/İzmir</p>
-        <p>📞 <a href="tel:+905442087149" style="color: #f1c40f; text-decoration: none;">+90 544 208 71 49</a></p>
-        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-            © 2026 Özen Kardeşler Nakliyat | Tüm Hakları Saklıdır<br>
-            İzmir Evden Eve Nakliyat | Asansörlü Taşıma | Şehirler Arası Nakliyat
-        </p>
+        <p data-sb-field-path="footer_company_name"><strong>ÖZEN KARDEŞLER NAKLİYAT</strong></p>
+        <p>© 2026 Tüm Hakları Saklıdır</p>
     </footer>
 
-    <!-- Smooth Scroll Script -->
-    <script>
+    </div><script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
