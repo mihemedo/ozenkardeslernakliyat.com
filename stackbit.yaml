@@ -1,18 +1,9 @@
 stackbitVersion: ~0.6.0
 ssgName: custom
+# Bu satır Netlify'a "build etmeye çalışma, direkt HTML'i göster" der
+publishDir: .
 contentSources:
   - type: files
     config:
       filePatterns:
-        - index.html
-      models:
-        - name: page
-          label: Sayfa
-          file: index.html
-          fields:
-            - name: hero_title
-              type: string
-            - name: hero_description
-              type: string
-            - name: company_name
-              type: string
+        - "index.html"
